@@ -1,0 +1,54 @@
+@import 'aos/dist/aos.css';
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --font-poetsen-one: "Poetsen One", sans-serif;
+  --font-bebas-neue: "Bebas Neue", sans-serif;
+}
+*{
+  box-sizing: border-box;
+}
+
+.poetson{
+  font-family: var(--font-poetsen-one);
+}
+.bebas{
+  font-family: var(--font-bebas-neue);
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins{
+  font-family: var(--font-poppins);
+}
+.custom_bg{
+  background:  #a3c978;
+}
+.custom_drawer{
+  min-height: 100vh !important;
+}
+body, html {
+  overflow-x: hidden;
+}
+.ant-drawer-title{
+  font-size: 20px !important;
+  font-weight: 800 !important;
+}
+.custom-date-input::-webkit-datetime-edit {
+  color: transparent;
+}
+.custom-date-input::-webkit-datetime-edit-fields-wrapper {
+  color: #508F21;
+  text-transform: uppercase;
+}
+.custom-date-input::-webkit-datetime-edit-text {
+  color: #508F21;
+}
+.custom-date-input::-webkit-datetime-edit-month-field,
+.custom-date-input::-webkit-datetime-edit-day-field,
+.custom-date-input::-webkit-datetime-edit-year-field {
+  color: #508F21;
+}
+.custom-date-input::-moz-placeholder {
+  color: transparent;
+}
