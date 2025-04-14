@@ -31,7 +31,7 @@ let cards_date = [
     para: "Spiced apple warmth to comfort winter moods",
     img: "/images/home/card4.svg",
     id: 35,
-    link:"Mains"
+    link:"Desserts"
   },
   {
     heading: "Cocoa Comfort",
