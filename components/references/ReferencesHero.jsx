@@ -9,7 +9,7 @@ const ReferencesHero = () => {
         <div className="flex flex-col gap-[10px]">
           <div className="flex flex-col gap-[20px] mx-2 md:mx-[50px] ">
             <h2 className="text-3xl md:text-5xl text-[#508F21] bebas customMargin mt-5">Resources</h2>
-            <div className="flex flex-col md:flex-row justify-between items-center gap-1 text-[#508F21] border h-[130px] border-[#508F21] p-2 md:p-[60px] rounded-[60px] custom_bg">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-1 text-[#508F21] border h-[auto] border-[#508F21] p-2 md:p-[60px] rounded-[60px] custom_bg">
               <p className="text-lg md:text-xl lg:text-[30px] poppins font-bold"><a href="https://drive.google.com/file/d/1FT5bsxvcBxCQ0QbGJa1kh4BaSYHqdYGb/view?usp=sharing" target="_blank">Works Cited</a></p>
               <p className="text-lg md:text-xl lg:text-[30px] poppins font-bold"><a href="https://drive.google.com/file/d/106p3jtqPZIlXnK366V127ody7BSSPyC8/view?usp=sharing" target="_blank">Images From</a> </p>
               <p className="text-lg md:text-xl lg:text-[30px] poppins font-bold"><a href="https://drive.google.com/file/d/1_9fr7ngArkkAYobHwQhXbyWsqgK_r48b/view?usp=sharin" target="_blank">Copyrights</a> </p>

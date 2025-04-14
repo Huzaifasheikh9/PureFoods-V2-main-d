@@ -13,9 +13,12 @@ import Beverages from "./Beverages";
 
 const MenuHero = () => {
   // Retrieve the active tab from localStorage or default to "Appetizers"
-  const [activeTab, setActiveTab] = useState(
-    () => localStorage.getItem("activeMenuTab") || "Appetizers"
-  );
+  // const [activeTab, setActiveTab] = useState(
+  //   () => localStorage.getItem("activeMenuTab") || "Appetizers"
+  // );
+
+
+  const [activeTab, setActiveTab] = useState("activeMenuTab");
 
   const menuItems = [
     { name: "Appetizers", component: <Appetizers /> },
@@ -25,10 +28,17 @@ const MenuHero = () => {
     { name: "Beverages", component: <Beverages /> },
   ];
 
-  useEffect(() => {
-    localStorage.setItem("activeMenuTab", activeTab);
-  }, [activeTab]);
+  // useEffect(() => {
+  //   localStorage.setItem("activeMenuTab", activeTab);
+  // }, [activeTab]);
 
+  useEffect(() => {
+    const storedTab = localStorage.getItem("activeMenuTab");
+    if (storedTab) {
+      setActiveTab(storedTab);
+    }
+  }, []);
+  
   useEffect(() => {
     const hash = window.location.hash.replace("#", "");
     if (hash) {

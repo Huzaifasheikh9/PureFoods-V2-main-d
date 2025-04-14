@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import "./globals.css";
 import Navbar from "../../shared/Navbar";
 import Footer from "../../shared/Footer";
-import { Poppins, Poetsen_One, Bebas_Neue } from "next/font/google";
+import { Poppins, Bebas_Neue } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -13,11 +13,11 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-const poetsenOne = Poetsen_One({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-poetsen-one",
-});
+// const poetsenOne = Poetsen_One({
+//   subsets: ["latin"],
+//   weight: "400",
+//   variable: "--font-poetsen-one",
+// });
 
 const bebasNeue = Bebas_Neue({
   subsets: ["latin"],
@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
        
       </head>
       <body
-        className={`${poppins.variable} ${poetsenOne.variable} ${bebasNeue.variable} antialiased`}
+        className={`${poppins.variable} ${bebasNeue.variable} antialiased`}
       >
         <Navbar />
         {children}
